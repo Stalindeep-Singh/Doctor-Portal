@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.orange{
+    color: orangered;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    box-shadow: 2px 3px 5px rgba(0,0,0,0.3);
+}
+nav ul{
+    display: flex;
+    gap: 1.4rem;
+    
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li .links:hover{
+    border-bottom: 1px solid orangered;
+}
+nav ul .log_out{
+   background: rgb(255, 107, 53);
+   padding: 0.5rem 1.4rem;
+   border-radius: 40px;
+   color: white;
+}
+nav ul .log_out:hover{
+    background: rgb(255, 68, 0);
+    
+}
+.heading{
+    display: flex;
+}
+.heading .flags_and_timing{
+  
+   padding-top: 1rem;
+    width: 18%;
+    background: #c3f4ff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.heading .timing{
+    display: flex;
+    justify-content: space-around;
+}
+.heading  img{
+    margin: 0 10px;
+    margin-bottom: 20px;
+    width: 50px;
+    height: 30px;
+}
+
+.heading .head{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+    background: rgb(255, 202, 183);
+    color: orangered;
+}
+.working{
+    display: flex;
+}
+.working .leftBar{
+    width: 18%;
+    
+}
+.working .leftBar ul li {
+      list-style: none;
+      padding: 1rem 4rem;
+      background: rgb(185, 235, 247);
+      border-bottom:1px solid rgb(0, 26, 255);
+    
+    }
+    .working .leftBar ul li a{
+        color: black;
+        text-decoration: none;
+    }
+.working .right_side{
+    flex: 1;
+padding: 2rem 4rem;
+}
+.input_div1{
+    border: 1px solid #ccc;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.input_div1 input{
+    width: 100%;
+    padding-left: 5px;
+    outline: none;
+    border: none;
+}
+.input_div1 svg{
+    background: orangered;
+    padding: 3px;
+    cursor: pointer;
+}
+.working .add{
+    all: unset;
+    margin: 2rem 0;
+    background: rgb(255, 107, 53);
+    padding: 0.5rem 1.4rem;
+    border-radius: 40px;
+    color: white;
+}
+.working .add:hover{
+    background: rgb(255, 68, 0);
+    cursor: pointer;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th{
+    background: rgba(255, 68, 0,0.2);
+    color:rgb(255, 68, 0) ;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: rgba(255, 68, 0,0.2);
+  }
