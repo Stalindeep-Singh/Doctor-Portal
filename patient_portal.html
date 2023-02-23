@@ -57,6 +57,32 @@
                 </svg>
             </div>
             <button class="add" id="add-button">Add Patient</button>
+            <button class="add" id="toggle-button" onclick="toggle_new_Patient()">Add Patient</button>
+            <div class="addNew none" id="new_patient">
+                <h3>New Patient Details</h3>
+                <form action="" class="form">
+                    <div class="input_div">
+                        <label for="">Risk Scale</label>
+                        <input type="text" placeholder="Enter Risk Scale">
+                    </div>
+                    <div class="input_div">
+                        <label for="">Contact Parent</label>
+                        <input type="text" placeholder="Enter Contact Parent">
+                    </div>
+                    <div class="input_div">
+                        <label for="">Child Name</label>
+                        <input type="text" placeholder="Enter Child Name">
+                    </div>
+                    <div class="input_div">
+                        <label for="">Last Handling Date</label>
+                        <input type="date" placeholder="Last Handling Date">
+                    </div>
+                    <div class="input_div">
+                        <label for="">Date of Birth</label>
+                        <input type="date" placeholder="Date Of Birth">
+                    </div>
+                </form>
+            </div>
             <div class="total-records" id="count"></div>
             <table id="myTable">
              <thead>
