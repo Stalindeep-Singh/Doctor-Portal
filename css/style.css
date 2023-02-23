@@ -6,6 +6,9 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.none{
+    display: none;
+}
 .orange{
     color: orangered;
 }
@@ -117,6 +120,7 @@ padding: 2rem 4rem;
     padding: 0.5rem 1.4rem;
     border-radius: 40px;
     color: white;
+  
 }
 .working .add:hover{
     background: rgb(255, 68, 0);
@@ -136,10 +140,38 @@ td, th {
     padding: 8px;
   }
   
-  /* tr:nth-child(odd) {
-    background-color: rgba(255, 68, 0,0.2);
-  } */
+ 
   .remove-button{
     margin-left: 15px;
     padding: 4px 6px;
   }
+.addNew{
+    margin: 2rem 0;
+    margin-top: 0;
+    margin-top: 0;
+}
+.addNew h3{
+    color: orangered;
+}
+.addNew .form{
+    margin: 0.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 0;
+    
+}
+.addNew .form .input_div{
+    width: 30%;
+    display: flex;
+    margin: 0 1%;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.addNew input{
+    width: 50%;
+    all: unset;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+}

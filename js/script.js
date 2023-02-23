@@ -93,19 +93,19 @@ function updateTime() {
     populateTable(filteredData);
   }
   
-  function addData() {
-    const risk_scale = prompt('Enter risk_scale:');
-    const contact_parent = prompt('Enter contact_parent:');
-    const child_name = prompt('Enter child_name:');
-    const last_handling_date = prompt('Enter last_handling_date:');
-    const dob = prompt('Enter dob:');
+  // function addData() {
+  //   const risk_scale = prompt('Enter risk_scale:');
+  //   const contact_parent = prompt('Enter contact_parent:');
+  //   const child_name = prompt('Enter child_name:');
+  //   const last_handling_date = prompt('Enter last_handling_date:');
+  //   const dob = prompt('Enter dob:');
   
-    if (risk_scale && contact_parent && child_name && last_handling_date && dob) {
-      const newData = { risk_scale, contact_parent, child_name, last_handling_date, dob};
-      data.push(newData);
-      populateTable(data);
-    }
-  }
+  //   if (risk_scale && contact_parent && child_name && last_handling_date && dob) {
+  //     const newData = { risk_scale, contact_parent, child_name, last_handling_date, dob};
+  //     data.push(newData);
+  //     populateTable(data);
+  //   }
+  // }
   
   function removeData(index) {
     data.splice(index, 1);
@@ -133,7 +133,7 @@ function updateTime() {
   
   populateTable(data);
   
-  
+  function change_color(){
   // for change rows color on risk scale cell data changes
     var table = document.getElementById("myTable");
     var rows = table.getElementsByTagName("tr");
@@ -149,4 +149,15 @@ function updateTime() {
         }
       }
     }
+  };
+  change_color()
   
+//toggle for new patient details div
+
+const toggleButton = document.getElementById('toggle-button');
+const targetElement = document.getElementById('new_patient');
+
+toggleButton.addEventListener('click', function() {
+  alert("Please")
+  targetElement.classList.toggle('none');
+});
