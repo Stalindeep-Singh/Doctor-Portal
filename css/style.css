@@ -9,6 +9,7 @@ body{
 .orange{
     color: orangered;
 }
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -136,10 +137,7 @@ td, th {
     padding: 8px;
   }
   
-  /* tr:nth-child(odd) {
-    background-color: rgba(255, 68, 0,0.2);
-  } */
-  .remove-button{
-    margin-left: 15px;
-    padding: 4px 6px;
-  }
+ 
+ .new_patient{
+    display: flex;
+ }
